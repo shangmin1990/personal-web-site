@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - '0.10'
 before_script:
-  - echo -e "Host heroku.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+  - echo -e "Host ${HOST}\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 script:
   - bower install
   - gulp
