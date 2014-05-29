@@ -2,7 +2,9 @@
  node_js:
    - "0.10"
  before_script:
-
+   - npm install
  script:
-
+   - bower install
+   - gulp
  after_script:
+   - rsync -avz ./ ubuntu@shmin.net:~/person-web-site/
