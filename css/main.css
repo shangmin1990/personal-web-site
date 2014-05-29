@@ -1,0 +1,13 @@
+html
+{
+color:#000;
+background:#FFF;
+}
+*
+{ margin:0;padding:0;}
+body{
+background:url("../img/b1.jpg") no-repeat;
+-moz-background-size:100% 100%; /* 老版本的 Firefox */
+-webkit-background-size:100% 100%;
+background-size:100% 100%;
+}

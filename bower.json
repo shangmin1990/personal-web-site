@@ -1,0 +1,19 @@
+{
+  "name": "benjamin",
+  "version": "0.1.0",
+  "authors": [
+    "Benjamin"
+  ],
+  "description": "benjamin's personal web-site",
+  "keywords": [
+    "web-site-page",
+    "personal",
+    "benjamin"
+  ],
+  "license": "MIT",
+  "homepage": "www.shmin.net",
+  "dependencies":{
+    "angular": ">1.2.0",
+    "bootstrap":"3.1.1"
+  }
+}
