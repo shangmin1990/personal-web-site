@@ -1,11 +1,13 @@
 language: node_js
 node_js:
-- '0.10'
+  - '0.10'
+before_script:
+  - echo -e "Host heroku.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 script:
-- bower install
-- gulp
+  - bower install
+  - gulp
 after_script:
-- rsync -avz ./ ${USERNAME}@${HOST}:~/person-web-site/
+  - rsync -avz ./ ${USERNAME}@${HOST}:~/person-web-site/
 env:
   global:
     secure: g4SNSwLcVN7UsYemxAPMyCEFGhgp8cLQvkgk57IvAT3Ixli4FMiWtbCVA/ka0VTcgM+Tqf+t7ddDlP9lXh3kVFCYkpfe9GHuTSXOPl+EEdURtZZ2iUPhO6Z+N1QoXLF+C4T+slNoc/ONqFQYVIuRwSvzpuTzZmrHlQa5EG6Tpmw=
