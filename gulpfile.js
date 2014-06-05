@@ -21,7 +21,7 @@ gulp.task('concat',function(){
 });
 gulp.task('cssmin',function(){
   return gulp.src(paths.css)
-    .pipe(concat('all.js'))
+    .pipe(concat('all.css'))
     .pipe(gulp.dest('build/css'));
 });
 gulp.task('default',['uglify','concat','cssmin']);
