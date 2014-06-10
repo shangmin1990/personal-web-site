@@ -1,13 +1,28 @@
 body {
   padding-top: 40px;
   padding-bottom: 40px;
-  background: url("../img/loginbg4.jpg") no-repeat;
+  background: url("../img/registbg1.jpg") no-repeat;
   /* css3 background full screen*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
   -o-background-size: cover;
   background-size:cover;
+}
+.container{
+  transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  padding-top: 200px;
+}
+
+h2.form-signin-heading{
+  color: #ffffff;
+}
+
+label.checkbox{
+  color: #ffffff;
 }
 
 .form-signin {

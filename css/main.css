@@ -6,10 +6,14 @@ background:#FFF;
 *
 { margin:0;padding:0;}
 body{
-background:url("../img/b1.jpg") no-repeat;
+background:#ffffff no-repeat;
 -moz-background-size:100% 100%; /* 老版本的 Firefox */
 -webkit-background-size:100% 100%;
 background-size:100% 100%;
+}
+
+img + p{
+  margin-top: 10px;
 }
 
 /* CUSTOMIZE THE CAROUSEL
@@ -18,8 +22,7 @@ background-size:100% 100%;
 /* Carousel base class */
 .carousel {
     margin-top: 50px;
-    height: 500px;
-    margin-bottom: 60px;
+    height: 300px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -28,7 +31,7 @@ background-size:100% 100%;
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-    height: 500px;
+    height: 300px;
     background-color: #777;
 }
 .carousel-inner > .item > img {
@@ -36,7 +39,7 @@ background-size:100% 100%;
     top: 0;
     left: 0;
     min-width: 100%;
-    height: 500px;
+    height: 300px;
 }
 
 
