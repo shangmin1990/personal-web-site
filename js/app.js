@@ -1,0 +1,9 @@
+angular.module("website",[
+  'ui.router',
+  'website.controller',
+  'website.filter',
+  'website.directive',
+  'website.service'
+]).config(['$stateProvider','$urlRouterProvider',function($stateProvider,$urlRouterProvider){
+  $stateProvider.state()
+}]);
