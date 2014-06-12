@@ -1,5 +1,5 @@
 <!doctype>
-<html>
+<html ng-app="website">
 <meta charset='utf-8'/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <link type="text/css" rel="stylesheet" href="css/main.css"/>
@@ -19,20 +19,20 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Benjamin</a>
+            <a class="navbar-brand" href="#" ui-sref="home">Benjamin</a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">首页</a></li>
-                <li><a href="#about">相册</a></li>
-                <li><a href="#contact">文章</a></li>
-                <li><a href="#about">留言板</a></li>
+                <li><a href="#/" ui-sref="home" >首页</a></li>
+                <li><a href="#/photo" ui-sref="photo">相册</a></li>
+                <li><a href="#/article" ui-sref="all">文章</a></li>
+                <li><a href="#/message" ui-sref="message">留言板</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于我 <b class="caret"></b></a>
+                    <a href="#/about" ui-sref="about" class="dropdown-toggle" data-toggle="dropdown">关于我 <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">个人信息</a></li>
-                        <li><a href="#">项目经验</a></li>
-                        <li><a href="#">掌握技能</a></li>
+                        <li><a href="/info" ui-sref="info">个人信息</a></li>
+                        <li><a href="#/project" ui-sref="project">项目经验</a></li>
+                        <li><a href="#/skill" ui-sref="skill">掌握技能</a></li>
                         <li class="divider"></li>
                         <li class="dropdown-header">个人简历</li>
                         <li><a href="#">联系方式</a></li>
@@ -109,7 +109,7 @@
   <hr>
   <div class="row">
     <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-left">
-      <h2>精彩博文推荐</h2>
+      <h2>博文推荐</h2>
     </div>
     <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-right">
       <a class="btn-default btn">换一批</a>
@@ -137,7 +137,7 @@
   <hr>
     <div class="row">
       <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-left">
-        <h2>精彩照片欣赏</h2>
+        <h2>照片欣赏</h2>
       </div>
       <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-right">
         <a class="btn-default btn">换一批</a>
@@ -237,7 +237,11 @@
 <script type="text/javascript" src="lib/jquery/dist/jquery.js"></script>
 <script type="text/javascript" src="lib/bootstrap/dist/js/bootstrap.js"></script>
 <script type="text/javascript" src="lib/angular/angular.min.js"></script>
-<script type="text/javascript" src="lib/angular-ui-router/release/angular-ui-router.js"/>
-<script type="text/javascript" src="js/app.js"/>
+<script type="text/javascript" src="lib/angular-ui-router/release/angular-ui-router.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/controller.js"></script>
+<script type="text/javascript" src="js/directive.js"></script>
+<script type="text/javascript" src="js/filter.js"></script>
+<script type="text/javascript" src="js/service.js"></script>
 </body>
 </html>
