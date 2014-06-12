@@ -28,7 +28,6 @@ div#bottombar > a{
   margin-left: 10px;
 }
 div[ui-view="comments"] {
-  border: 1px solid #000000;
   -webkit-perspective: 800px;
   -moz-perspective: 800px;
   -o-perspective: 800px;
