@@ -24,7 +24,7 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li><a href="#/" ui-sref="home" >首页</a></li>
-                <li><a href="#/photo" ui-sref="photo">相册</a></li>
+                <li><a href="#/album" ui-sref="album">相册</a></li>
                 <li><a href="#/article" ui-sref="all">文章</a></li>
                 <li><a href="#/message" ui-sref="message">留言板</a></li>
                 <li class="dropdown">
@@ -172,59 +172,69 @@
   </div>
 
   <hr>
-  <h2>留言板</h2>
-  <div class="well">
     <div class="row">
-      <div class="col-md-1">
-        <img src="img/avatar.jpg" width="50" height="50" class="img-rounded">
+      <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-left">
+        <h2>留言板</h2>
       </div>
-      <div class="col-lg-11">
-        <p>I'm just 过来看看 just a test yes</p>
+      <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-right">
+        <a class="btn-default btn" href="#/writeComment" ui-sref="writeComment">我要留言</a>
       </div>
     </div>
-  </div>
-  <div class="well">
-    <div class="row">
-      <div class="col-md-1">
-        <img src="img/avatar.jpg" width="50" height="50" class="img-rounded">
+    <div ui-view="comments">
+      <div class="well">
+        <div class="row">
+          <div class="col-md-1">
+            <img src="img/avatar.jpg" width="50" height="50" class="img-rounded">
+          </div>
+          <div class="col-lg-11">
+            <p>I'm just 过来看看 just a test yes</p>
+          </div>
+        </div>
       </div>
-      <div class="col-lg-11">
-        <p>I'm just 过来看看 just a test yes</p>
+      <div class="well">
+        <div class="row">
+          <div class="col-md-1">
+            <img src="img/avatar.jpg" width="50" height="50" class="img-rounded">
+          </div>
+          <div class="col-lg-11">
+            <p>I'm just 过来看看 just a test yes</p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="well">
-    <div class="row">
-      <div class="col-md-1">
-        <img src="img/avatar.jpg" width="50" height="50" class="img-rounded">
-        <p>我是中国范德萨发达算法打算范德萨</p>
-      </div>
-      <div class="col-lg-11">
+      <div class="well">
+        <div class="row">
+          <div class="col-md-1">
+            <img src="img/avatar.jpg" width="50" height="50" class="img-rounded">
+            <p>我是中国范德萨发达算法打算范德萨</p>
+          </div>
+          <div class="col-lg-11">
 
-        <p>I'm just 过来看看 just a test yesI'm just 过来看看 just a test yesI'm just 过来看看 just a test yesI'm just 过来看看 just a test yesI'm just 过来看看 just a test yesI'm just 过来看看 just a test yesI'm just 过来看看 just a test yesI'm just 过来看看 just a test yesI'm just 过来看看 just a test yesI'm just 过来看看 just a test yesI'm just 过来看看 just a test yesI'm just 过来看看 just a test yes</p>
+            <p>I'm just 过来看看 just a test yesI'm just 过来看看 just a test yesI'm just 过来看看 just a test yesI'm just 过来看看 just a test yesI'm just 过来看看 just a test yesI'm just 过来看看 just a test yesI'm just 过来看看 just a test yesI'm just 过来看看 just a test yesI'm just 过来看看 just a test yesI'm just 过来看看 just a test yesI'm just 过来看看 just a test yesI'm just 过来看看 just a test yes</p>
+          </div>
+        </div>
+      </div>
+      <div class="well">
+        <div class="row">
+          <div class="col-md-1">
+            <img src="img/avatar.jpg" width="50" height="50" class="img-rounded">
+          </div>
+          <div class="col-lg-11">
+            <p>I'm just 过来看看 just a test yes</p>
+          </div>
+        </div>
+      </div>
+      <div class="well">
+        <div class="row">
+          <div class="col-md-1">
+            <img src="img/avatar.jpg" width="50" height="50" class="img-rounded">
+          </div>
+          <div class="col-lg-11">
+            <p>I'm just 过来看看 just a test yes</p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="well">
-    <div class="row">
-      <div class="col-md-1">
-        <img src="img/avatar.jpg" width="50" height="50" class="img-rounded">
-      </div>
-      <div class="col-lg-11">
-        <p>I'm just 过来看看 just a test yes</p>
-      </div>
-    </div>
-  </div>
-  <div class="well">
-    <div class="row">
-      <div class="col-md-1">
-        <img src="img/avatar.jpg" width="50" height="50" class="img-rounded">
-      </div>
-      <div class="col-lg-11">
-        <p>I'm just 过来看看 just a test yes</p>
-      </div>
-    </div>
-  </div>
+
     <!--default page end-->
  </div>
 </div>

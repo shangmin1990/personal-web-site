@@ -8,6 +8,15 @@ angular.module("website",[
   $stateProvider.state('home',{
     url: "/"
   });
+  $stateProvider.state('writeComment',{
+    parent:'home',
+    url:"/writeComment",
+    views:{
+      "comments":{
+        templateUrl:"template/writeComment.html"
+      }
+    }
+  })
   /**
    * module article $urlRouter config begin
    */
@@ -57,7 +66,7 @@ angular.module("website",[
   });
   //module article config end
 
-  $stateProvider.state('photo',{
-    
+  $stateProvider.state('album',{
+
   });
 }]);

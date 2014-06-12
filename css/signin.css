@@ -15,6 +15,7 @@ body {
   -moz-transform: rotate(-10deg);
   -o-transform: rotate(-10deg);
   padding-top: 200px;
+  width: 90%;
 }
 
 h2.form-signin-heading{
