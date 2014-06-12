@@ -1,44 +1,5 @@
 /* ANIMATIONS
 ============================================================================= */
-
-/* leaving animations ----------------------------------------- */
-/* rotate and fall */
-@keyframes rotateFall {
-  0% 		{ transform: rotateZ(0deg); }
-  20% 	{ transform: rotateZ(10deg); animation-timing-function: ease-out; }
-  40% 	{ transform: rotateZ(17deg); }
-  60% 	{ transform: rotateZ(16deg); }
-  100% 	{ transform: translateY(100%) rotateZ(17deg); }
-}
-
-/* slide in from the bottom */
-@keyframes slideOutLeft {
-  to 		{ transform: translateX(-100%); }
-}
-
-/* rotate out newspaper */
-@keyframes rotateOutNewspaper {
-  to 		{ transform: translateZ(-3000px) rotateZ(360deg); opacity: 0; }
-}
-
-/* entering animations --------------------------------------- */
-/* scale up */
-@keyframes scaleUp {
-  from 	{ opacity: 0.3; -webkit-transform: scale(0.8); }
-}
-
-/* slide in from the right */
-@keyframes slideInRight {
-  from 	{ transform:translateX(100%); }
-  to 		{ transform: translateX(0); }
-}
-
-/* slide in from the bottom */
-@keyframes slideInUp {
-  from 	{ transform:translateY(100%); }
-  to 		{ transform: translateY(0); }
-}
-
 @keyframes flip {
   0% 		{ -webkit-transform: rotateY(0deg);
     -moz-transform: rotateY(0deg);
@@ -48,8 +9,19 @@
     -moz-transform-origin:50% 50%;
     -o-transform-origin:50% 50%;
     transform-origin:50% 50%;
+    transform-style: preserve-3d;
   }
-  25% 	{ -webkit-transform: rotateY(90deg);
+  25% 	{ -webkit-transform: rotateY(45deg);
+    -moz-transform: rotateY(45deg);
+    -o-transform: rotateY(45deg);
+    transform: rotateY(45deg);
+    -webkit-transform-origin:50% 50%;
+    -moz-transform-origin:50% 50%;
+    -o-transform-origin:50% 50%;
+    transform-origin:50% 50%;
+    transform-style: preserve-3d;
+  }
+  50% 	{ -webkit-transform: rotateY(90deg);
     -moz-transform: rotateY(90deg);
     -o-transform: rotateY(90deg);
     transform: rotateY(90deg);
@@ -57,33 +29,27 @@
     -moz-transform-origin:50% 50%;
     -o-transform-origin:50% 50%;
     transform-origin:50% 50%;
+    transform-style: preserve-3d;
   }
-  50% 	{ -webkit-transform: rotateY(180deg);
+  75% 	{ -webkit-transform: rotateY(135deg)
+  -moz-transform: rotateY(135deg);
+    -o-transform: rotateY(135deg);
+    transform: rotateY(135deg);
+    -webkit-transform-origin:50% 50%;
+    -moz-transform-origin:50% 50%;
+    -o-transform-origin:50% 50%;
+    transform-origin:50% 50%;
+    transform-style: preserve-3d;
+  }
+  100% 	{ -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    transform: rotateY(180deg);
+    -o-transform:  rotateY(180deg);
+    transform:  rotateY(180deg);
     -webkit-transform-origin:50% 50%;
     -moz-transform-origin:50% 50%;
     -o-transform-origin:50% 50%;
     transform-origin:50% 50%;
-  }
-  75% 	{ -webkit-transform: rotateY(270deg)
-  -moz-transform: rotateY(270deg);
-    -o-transform: rotateY(270deg);
-    transform: rotateY(270deg);
-    -webkit-transform-origin:50% 50%;
-    -moz-transform-origin:50% 50%;
-    -o-transform-origin:50% 50%;
-    transform-origin:50% 50%;
-  }
-  100% 	{ -webkit-transform: rotateY(360deg);
-    -moz-transform: rotateY(360deg);
-    -o-transform:  rotateY(360deg);
-    transform:  rotateY(360deg);
-    -webkit-transform-origin:50% 50%;
-    -moz-transform-origin:50% 50%;
-    -o-transform-origin:50% 50%;
-    transform-origin:50% 50%;
+    transform-style: preserve-3d;
   }
 }
 
