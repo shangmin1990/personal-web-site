@@ -27,6 +27,12 @@ div[ui-view]:first-child{
 div#bottombar > a{
   margin-left: 10px;
 }
+.flip{
+  -webkit-animation:flip 0.6s ease-in-out;
+  -moz-animation:flip 0.6s ease-in-out;
+  -o-animation:flip 0.6s ease-in-out;
+  animation:flip 0.6s ease-in-out;
+}
 
 
 
