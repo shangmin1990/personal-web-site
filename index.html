@@ -2,8 +2,9 @@
 <html ng-app="website">
 <meta charset='utf-8'/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<link type="text/css" rel="stylesheet" href="css/main.css"/>
 <link type="text/css" rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet" href="css/main.css"/>
+<link type="text/css" rel="stylesheet" href="css/flip.css"/>
 <title>Web site</title>
 <body>
 <!--background music -->
@@ -177,10 +178,10 @@
         <h2>留言板</h2>
       </div>
       <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-right">
-        <a class="btn-default btn" href="#/writeComment" ui-sref="writeComment">我要留言</a>
+        <a class="btn-default btn" href="#/" ui-sref="home.writeComment">我要留言</a>
       </div>
     </div>
-    <div ui-view="comments">
+    <div ui-view="comments" class="flip">
       <div class="well">
         <div class="row">
           <div class="col-md-1">

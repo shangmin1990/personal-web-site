@@ -8,15 +8,14 @@ angular.module("website",[
   $stateProvider.state('home',{
     url: "/"
   });
-  $stateProvider.state('writeComment',{
-    parent:'home',
-    url:"/writeComment",
+  $stateProvider.state('home.writeComment',{
     views:{
       "comments":{
+        controller:'WriteCommentCtrl',
         templateUrl:"template/writeComment.html"
       }
     }
-  })
+  });
   /**
    * module article $urlRouter config begin
    */
@@ -27,7 +26,6 @@ angular.module("website",[
    * module article $state config begin
    */
   $stateProvider.state('article',{
-    url: "/article",
     //mean 此状态不能被单独激活.只能由其子状态激活
     abstract:"true",
     templateUrl:'template/article/article.html'
@@ -36,7 +34,7 @@ angular.module("website",[
   ///article > all///
   //////////////////
   $stateProvider.state('all',{
-    url: "/all",
+    url: "/article",
     parent:'article',
     templateUrl:'template/article/article.all.html'
   });
