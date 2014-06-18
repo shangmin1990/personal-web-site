@@ -42,6 +42,64 @@ div#bottombar > a{
   transform-style: preserve-3d;
 }
 
+.music-img{
+  width:120px;
+  height:120px;
+  background: url('../img/musicbg.png') no-repeat;
+  background-position: -280px 0px;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  -webkit-transform:rotate(0deg);
+  -transform:rotate(0deg);
+  -webkit-transition:all 5s linear;
+  transition:all 5s linear;
+}
+.music-img:hover{
+  -webkit-transform:rotate(3600000deg);
+  -transform:rotate(3600000deg);
+}
+
+.ctrl{
+  height: 35px;
+  width: 35px;
+  background-clip: padding-box;
+  background: url("../img/musicbg.png") no-repeat;
+  border-radius: 50%;
+}
+.play-ab{
+  position: absolute;
+  top: 40px;
+  left: 60px;
+  background-position: -23px 0px;
+}
+.play-ab:hover{
+  position: absolute;
+  top: 40px;
+  left: 60px;
+  background-position: -23px -40px;
+}
+.play{
+  background-position: -3px -146px;
+}
+.play:hover{
+  background-position: -53px -146px;
+}
+.next{
+  background-position: -111px -146px;
+}
+.next:hover{
+  background-position: -151px -146px;
+}
+ul,ol{
+  list-style:none;
+}
+li{
+  display: block;
+  float: left;
+}
 
 
 /* CUSTOMIZE THE CAROUSEL
