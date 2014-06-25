@@ -64,7 +64,11 @@ angular.module("website",[
   });
   //module article config end
 
+  /**
+   * module album $state config begin
+   */
   $stateProvider.state('album',{
-
+    url:'/album',
+    templateUrl:'template/album/album.html'
   });
 }]);
