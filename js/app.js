@@ -8,14 +8,6 @@ angular.module("website",[
   $stateProvider.state('home',{
     url: "/"
   });
-  $stateProvider.state('home.writeComment',{
-    views:{
-      "comments":{
-        controller:'WriteCommentCtrl',
-        templateUrl:"template/writeComment.html"
-      }
-    }
-  });
   /**
    * module article $urlRouter config begin
    */
@@ -70,5 +62,18 @@ angular.module("website",[
   $stateProvider.state('album',{
     url:'/album',
     templateUrl:'template/album/album.html'
+  });
+
+  /**
+   * module comment $state config begin
+   */
+  $stateProvider.state('comment',{
+    url:'/comment',
+    templateUrl:'template/comment/comment.html'
+  });
+  $stateProvider.state('comment.writeComment',{
+    url:'/write',
+    controller:'WriteCommentCtrl',
+    templateUrl:'template/comment/writeComment.html'
   });
 }]);
