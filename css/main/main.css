@@ -208,6 +208,21 @@ li {
   cursor: pointer;
 }
 
+.info-item{
+  margin-top: 5px;
+}
+.info h2{
+  margin-top: 5px;
+}
+.skills{
+  border-width: 0px;
+  background-color: transparent;
+}
+.skills_heading{
+  background-clip: content-box;
+  border-width: 0px;
+}
+
 
 
 /* CUSTOMIZE THE CAROUSEL
