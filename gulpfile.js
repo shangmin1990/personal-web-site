@@ -30,7 +30,7 @@ var reload = browserSync.reload;
 
 var paths={
   scripts:['js/*.js'],
-  css:'css/*.css'
+  css:'css/main/*.css'
 };
 gulp.task('uglify',function(){
   return gulp.src(paths.scripts)

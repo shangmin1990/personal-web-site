@@ -113,7 +113,7 @@ music-player style-----------------*/
 .music-img{
   width:120px;
   height:120px;
-  background: url('../img/musicbg.png') no-repeat;
+  background: url('../../img/musicbg.png') no-repeat;
   background-position: -280px 0px;
   -moz-background-clip: padding-box;
   -webkit-background-clip: padding-box;
@@ -138,7 +138,7 @@ music-player style-----------------*/
   height: 35px;
   width: 35px;
   background-clip: padding-box;
-  background: url("../img/musicbg.png") no-repeat;
+  background: url("../../img/musicbg.png") no-repeat;
   border-radius: 50%;
 }
 .ctrl-sm{

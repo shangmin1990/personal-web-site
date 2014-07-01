@@ -76,4 +76,9 @@ angular.module("website",[
     controller:'WriteCommentCtrl',
     templateUrl:'template/comment/writeComment.html'
   });
+
+  $stateProvider.state('aboutMe',{
+    url:'/about',
+    templateUrl:'template/aboutMe.html'
+  });
 }]);
