@@ -223,6 +223,12 @@ li {
   border-width: 0px;
 }
 
+.skills_body .progress{
+height: 20px;
+}
+.skills_body .label{
+  line-height: 1.7;
+}
 
 
 /* CUSTOMIZE THE CAROUSEL
