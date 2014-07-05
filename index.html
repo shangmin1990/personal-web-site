@@ -9,7 +9,8 @@
 <title>Web site</title>
 <body>
 <!--background music -->
-<audio src="asset/b1.mp3" autoplay loop></audio>
+<!--<audio src="asset/b1.mp3" autoplay loop></audio>-->
+<!--<audio src="http://cc.stream.qqmusic.qq.com/C1000035GveV3i9dBM.m4a?fromtag=52" autoplay loop></audio>-->
 
 <!-- Fixed navbar -->
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -57,7 +58,9 @@
         </div><!--/.nav-collapse -->
     </div>
 </div>
-
+<div style="position: fixed;left: -15px;top: 50px;z-index: 100" ng-controller="MusicListCtrl">
+  <musicplayer list=musicList ></musicplayer>
+</div>
 
 <div class="container">
   <!-- Carousel
@@ -78,7 +81,7 @@
           <div class="carousel-caption">
             <h1>什么是个人空间?</h1>
             <p>个人空间是自己的专属领域,在这里我们可以分享自己的文章与照片,与好友一起互动.可以与朋友分享知识,通过知识共享来树立个人品牌</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">立即拥有</a></p>
+            <p><a class="btn btn-lg btn-primary disabled" href="#" role="button">立即拥有</a></p>
           </div>
         </div>
       </div>
@@ -88,7 +91,7 @@
           <div class="carousel-caption">
             <h1>个人空间能做什么?</h1>
             <p>可以上传自己的照片,可以写一些博客或者文章,与朋友分享.也可以给朋友评论,留言.建立属于自己的小圈子</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">立即拥有</a></p>
+            <p><a class="btn btn-lg btn-primary disabled" href="#" role="button">立即拥有</a></p>
           </div>
         </div>
       </div>
@@ -97,8 +100,12 @@
         <div class="container">
           <div class="carousel-caption">
             <h1>怎么样获得个人空间?</h1>
-            <p>只需要30秒,你就可以申请一个属于自己的个人空间.还等什么,立即行动吧.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">立即拥有</a></p>
+            <!--<p>只需要30秒,你就可以申请一个属于自己的个人空间.还等什么,立即行动吧.</p>-->
+            <p>现在还不支持开放注册。敬请期待</p>
+            <div class="text-center">
+              <p style="font-size: 25px;color: #a6e1ec">Coming soon~~~~~</p>
+            </div>
+            <p><a class="btn btn-lg btn-primary disabled" href="#" role="button">立即拥有</a></p>
           </div>
         </div>
       </div>
@@ -148,27 +155,27 @@
     </div>
 
   <div class="row">
-    <div class="col-md-2 text-center">
+    <div class="col-md-2 col-sm-4 col-xs-6 col-lg-2 text-center">
       <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt="..." class="img-thumbnail">
       <p><a class="btn btn-default" href="#" role="button">查看详细 »</a></p>
     </div>
-    <div class="col-md-2 text-center">
+    <div class="col-md-2 col-sm-4 col-xs-6 col-lg-2 text-center">
       <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt="..." class="img-thumbnail">
       <p><a class="btn btn-default" href="#" role="button">查看详细 »</a></p>
     </div>
-    <div class="col-md-2 text-center">
+    <div class="col-md-2 col-sm-4 col-xs-6 col-lg-2 text-center">
       <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt="..." class="img-thumbnail">
       <p><a class="btn btn-default" href="#" role="button" >查看详细 »</a></p>
     </div>
-    <div class="col-md-2 text-center">
+    <div class="col-md-2 col-sm-4 col-xs-6 col-lg-2 text-center">
       <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt="..." class="img-thumbnail">
       <p><a class="btn btn-default" href="#" role="button" >查看详细 »</a></p>
     </div>
-    <div class="col-md-2 text-center">
+    <div class="col-md-2 col-sm-4 col-xs-6 col-lg-2 text-center">
       <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt="..." class="img-thumbnail">
       <p><a class="btn btn-default" href="#" role="button" >查看详细 »</a></p>
     </div>
-    <div class="col-md-2 text-center">
+    <div class="col-md-2 col-sm-4 col-xs-6 col-lg-2 text-center">
       <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" alt="..." class="img-thumbnail">
       <p><a class="btn btn-default" href="#" role="button" >查看详细 »</a></p>
     </div>
@@ -186,6 +193,7 @@
 <script type="text/javascript" src="lib/bootstrap/dist/js/bootstrap.js"></script>
 <script type="text/javascript" src="lib/angular/angular.min.js"></script>
 <script type="text/javascript" src="lib/angular-ui-router/release/angular-ui-router.js"></script>
+<script type="text/javascript" src="lib/website-ui/website-ui.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
 <script type="text/javascript" src="js/controller.js"></script>
 <script type="text/javascript" src="js/directive.js"></script>

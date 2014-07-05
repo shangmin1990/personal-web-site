@@ -3,7 +3,8 @@ angular.module("website",[
   'website.controller',
   'website.filter',
   'website.directive',
-  'website.service'
+  'website.service',
+  'website.ui'
 ]).config(['$stateProvider','$urlRouterProvider',function($stateProvider,$urlRouterProvider){
   $stateProvider.state('home',{
     url: "/"

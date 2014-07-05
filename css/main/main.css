@@ -124,9 +124,9 @@ music-player style-----------------*/
   -moz-transform:rotate(0deg);
   -transform:rotate(0deg);
   */
-  -webkit-transition:-webkit-transform 200s linear;
-  -moz-transition:-moz-transform 200s linear;
-  transition:-webkit-transform 200s linear,-moz-transform 200s linear;
+  /*-webkit-transition:-webkit-transform 200s linear;*/
+  /*-moz-transition:-moz-transform 200s linear;*/
+  /*transition:-webkit-transform 200s linear,-moz-transform 200s linear;*/
 }
 /*
 .music-img:hover{
@@ -246,6 +246,28 @@ height: 20px;
   background-size: 40px 40px;
   -webkit-background-size: 40px 40px;
   -moz-background-size:40px 40px;
+}
+
+.info-header{
+  background-color: dodgerblue;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 20px;
+}
+.info-body{
+  background-color: #ffffff;
+  height: 35px;
+  line-height: 35px;
+  padding-left: 20px;
+  overflow: hidden;
+  font-size: 18px;
+}
+
+.info-content{
+  margin-top: 15px;
+}
+.personal-info-item{
+  padding-left: 20px;
 }
 
 
