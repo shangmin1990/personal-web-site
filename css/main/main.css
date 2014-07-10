@@ -270,6 +270,10 @@ height: 20px;
   padding-left: 20px;
 }
 
+.workex tr :first-child{
+  width: 100px;
+}
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */

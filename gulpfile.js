@@ -57,14 +57,14 @@ gulp.task('serve', function () {
   browserSync({
     notify: false,
     server: {
-      baseDir: ['app']
+      baseDir: ['./']
     }
   });
 
-  gulp.watch(['app/**/*.html'], reload);
-  gulp.watch(['app/build/css/**/*.css'],reload);
-  gulp.watch(['app/build/js/**/*.js'],reload);
-  gulp.watch(['app/images/**/*'], reload);
+  gulp.watch(['./**/*.html'], reload);
+  gulp.watch(['./build/css/**/*.css'],reload);
+  gulp.watch(['./build/js/**/*.js'],reload);
+  gulp.watch(['./img/**/*'], reload);
 });
 
 gulp.task('default',['uglify','concat','cssmin']);
