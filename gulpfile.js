@@ -61,10 +61,14 @@ gulp.task('serve', function () {
     }
   });
 
-  gulp.watch(['./**/*.html'], reload);
+  gulp.watch(['./**/*.html'],reload);
+  gulp.watch(['./css/**/*.css'],['default']);
+  gulp.watch(['./js/**/*.js'],['default']);
+  gulp.watch(['./img/**/*'], ['default']);
+
   gulp.watch(['./build/css/**/*.css'],reload);
   gulp.watch(['./build/js/**/*.js'],reload);
-  gulp.watch(['./img/**/*'], reload);
+  gulp.watch(['./build/img/**/*'], reload);
 });
 
 gulp.task('default',['uglify','concat','cssmin']);
