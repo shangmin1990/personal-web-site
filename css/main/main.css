@@ -216,10 +216,11 @@ music-player style-----------------*/
 }
 
 .skill_desc{
-  height: 200px;
+  height: 320px;
 }
-.skill_desc > ul > li{
+ul.skill_desc  > li{
   margin-top: 5px;
+  float: none;
 }
 
 .info-item{
@@ -253,6 +254,8 @@ height: 20px;
 .well.self{
   background-color: #d9edf7
 }
+
+
 /*Can't find this class in bootstrap.css so I add it myself*/
 .progress-bar-striped{
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
