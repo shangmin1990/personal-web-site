@@ -255,6 +255,29 @@ height: 20px;
   background-color: #d9edf7
 }
 
+.swing{
+  /*-webkit-transition:transform 0.6 ease-in-out;*/
+  /*-moz-transition:transform 0.6 ease-in-out;*/
+  /*-o-transition:transform 0.6 ease-in-out;*/
+  /*-ms-transition:transform 0.6 ease-in-out;*/
+  /*transition:transform 0.6 ease-in-out;*/
+  -webkit-transform:rotate(0deg);
+  -moz-transform:rotate(0deg);
+  -o-transform:rotate(0deg);
+  -ms-transform:rotate(0deg);
+  transform:rotate(0deg);
+  -webkit-transform-origin:50% 0;
+  -moz-transform-origin:50% 0;
+  -o-transform-origin:50% 0;
+  transform-origin:50% 0;
+}
+.swing:hover{
+  -webkit-animation:swing .6s ease-in-out;
+  -moz-animation:swing .6s ease-in-out;
+  -o-animation:swing .6s ease-in-out;
+  -ms-tanimation:swing .6s ease-in-out;
+}
+
 
 /*Can't find this class in bootstrap.css so I add it myself*/
 .progress-bar-striped{
