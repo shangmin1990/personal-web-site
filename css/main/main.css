@@ -314,6 +314,13 @@ height: 20px;
   width: 100px;
 }
 
+.swing :hover{
+  -webkit-animation:swing .6s ease-in-out;
+  -moz-animation:swing .6s ease-in-out;
+  -o-animation:swing .6s ease-in-out;
+  animation:swing .6s ease-in-out;
+}
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
