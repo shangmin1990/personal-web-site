@@ -13,7 +13,8 @@
   "license": "MIT",
   "homepage": "www.shmin.net",
   "dependencies":{
-    "bower-website-ui" : "master",
-    "angular-ui-router":"~0.2.10"
+    "bower-website-ui": "master",
+    "angular-ui-router": "~0.2.10",
+    "todomvc-common": "0.1.2"
   }
 }

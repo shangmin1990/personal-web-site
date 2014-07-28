@@ -1,0 +1,47 @@
+<section id="todoapp">
+    <header id="todo_header">
+        <h1>学习计划任务</h1>
+        <timer time="time"></timer>
+        <form id="todo-form" ng-submit="addTodo()">
+            <input id="new-todo" placeholder="今天我该做什么?" ng-model="newTodo" autofocus>
+        </form>
+    </header>
+    <section id="todo_main" ng-show="todos.length" ng-cloak>
+        <input id="toggle-all" type="checkbox" ng-model="allChecked" ng-click="markAll(allChecked)">
+        <label for="toggle-all">Mark all as complete</label>
+        <ul id="todo-list">
+            <li ng-repeat="todo in todos | filter:statusFilter" ng-class="{completed: todo.completed, editing: todo == editedTodo}">
+                <div class="view">
+                    <input class="toggle" type="checkbox" ng-model="todo.completed">
+                    <label ng-dblclick="editTodo(todo)">{{todo.title}}</label>
+                    <button class="destroy" ng-click="removeTodo(todo)"></button>
+                </div>
+                <form ng-submit="doneEditing(todo)">
+                    <input class="edit" ng-model="todo.title" on-blur="doneEditing()" focus="todo == editedTodo">
+                </form>
+            </li>
+        </ul>
+    </section>
+    <footer id="todo_footer" ng-cloak>
+      <span id="todo-count"><strong>{{remainingCount()}}</strong>
+        <ng-pluralize count="remainingCount()" when="{ one: '项未完成任务', other: '项未完成任务' }"></ng-pluralize>
+      </span>
+        <ul id="filters">
+            <li>
+                <a ng-class="{selected: filter == ''} " data-ng-href="#/todos/">所有的</a>
+            </li>
+            <li>
+                <a ng-class="{selected: filter == 'active'}" data-ng-href="#/todos/active">未完成</a>
+            </li>
+            <li>
+                <a ng-class="{selected: filter == 'completed'}" data-ng-href="#/todos/completed">已完成</a>
+            </li>
+        </ul>
+        <button id="clear-completed" ng-click="clearDoneTodos()" ng-show="remainingCount() < todos.length">清空已完成任务 ({{todos.length - remainingCount()}})</button>
+    </footer>
+</section>
+
+<footer id="todo_info">
+  <p>双击事项可以编辑</p>
+  <p>Based on <a href="http://todomvc.com">TodoMVC</a></p>
+</footer>

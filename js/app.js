@@ -82,4 +82,37 @@ angular.module("website",[
     url:'/about',
     templateUrl:'template/aboutMe.html'
   });
+  $stateProvider.state('todos',{
+    url:'/todos',
+    controller: "TodosCtrl",
+    resolve:{
+      todos: function($timeout, $q){
+        var defer = $q.defer();
+        $timeout(function(){
+          defer.resolve([{title:5,completed:true},{title:"Test you aaa",completed:false}]);
+        },1000);
+        return defer.promise;
+      },
+      // Example using function with returned promise.
+      // This is the typical use case of resolve.
+      // You need to inject any services that you are
+      // using, e.g. $http in this example
+      promiseObj:  function($http){
+        // $http returns a promise for the url data
+        return $http({method: 'GET', url: 'http://www.baidu.com'});
+      },
+
+      // Another promise example. If you need to do some
+      // processing of the result, use .then, and your
+      // promise is chained in for free. This is another
+      // typical use case of resolve.
+      promiseObj2:  function($http){
+        return $http({method: 'GET', url: 'http://www.shmin.net'})
+            .then (function (data) {
+          return data;
+        });
+      }
+    },
+    templateUrl:'template/todos/todos.html'
+  });
 }]);
