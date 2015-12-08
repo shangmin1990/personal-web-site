@@ -4,7 +4,7 @@ angular.module("website",[
   'website.filter',
   'website.directive',
   'website.service',
-  'website.ui'
+  'ui.website'
 ]).config(['$stateProvider','$urlRouterProvider',function($stateProvider,$urlRouterProvider){
   $stateProvider.state('home',{
     url: "/"
